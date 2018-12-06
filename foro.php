@@ -1,6 +1,11 @@
+<?
+include ("header.php");
+include ("side-bar.php");
+?>
 <div class="main-body">
 <div class="main-container">
   <div class="col-md-12 mb-max">
+
      <h3 class="text-center">Foro</h3>
   </div>
   <div class="row">
@@ -20,13 +25,17 @@
                        <div class="accordion" id="accordionExample">
                           <div class="card">
                              <div class="card-header" id="headingOne">
-                                <h5 class="mb-0">
+                              <h5 class="mb-0">
+
                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                    Pregunta :
                                    </button>
                                 </h5>
                              </div>
                           </div>
+                          <?
+                               include ("forofacebook.php");
+                               ?>
                           <div class="col-3">
                              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                                 <div class="card-body">
@@ -65,3 +74,6 @@
   </div>
 </div>
 </div>
+<?
+include("footer.php");
+?>

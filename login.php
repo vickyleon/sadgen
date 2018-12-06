@@ -1,4 +1,4 @@
-<?
+<?php
 include ("header.php");
 ?>
 <div class="main-body-login">
@@ -54,7 +54,6 @@ include ("header.php");
 	</div>
 </div>
 
-<?
+<?php
 include("footer.php");
 ?>
-

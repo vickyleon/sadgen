@@ -1,4 +1,4 @@
-<?
+<?php
 include ("header.php");
 include ("side-bar.php");
 ?>
@@ -603,6 +603,6 @@ include ("side-bar.php");
 			</div>
 		</div>
 	</div>
-<?
+<?php
 include("footer.php");
 ?>

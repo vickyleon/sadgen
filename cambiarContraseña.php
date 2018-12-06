@@ -1,3 +1,7 @@
+<?php
+include ("header.php");
+include ("side-bar.php");
+?>
 <div class="main-body">
 	<div class="center-container text-center">
 		<div class="pd">
@@ -47,3 +51,6 @@
 		</div>
 	</div>
 </div>
+<?php
+include("footer.php");
+?>

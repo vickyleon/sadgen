@@ -1,33 +1,3 @@
-<!-- Footer -->
-<!-- 
-<footer class="page-footer font-small pt-4 footer" >
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 mb-4">
-				<form class="form-inline">
-					<input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
-					<i class="fa fa-search" aria-hidden="true"></i>
-				</form>
-			</div>
-			<div class="col-md-6 mb-4">
-
-				<form class="input-group">
-					<input type="text" class="form-control form-control-sm" placeholder="Your email" aria-label="Your email"
-					 aria-describedby="basic-addon2">
-					<div class="input-group-append">
-						<button mdbBtn color="white" outline="true" size="sm" type="button" mdbWavesEffect>Sign up</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="footer-copyright text-center py-3">© 2018 Copyright:
-		<a href="https://mdbootstrap.com/angular/angular-tutorial/"> MDBootstrap.com</a>
-	</div>
-</footer> -->
-
 
 <footer class="page-footer font-small footer pt-4" [ngStyle]="{'margin-left': _auth.isLogged() ? '247px' : '0'}">
 	<div class="container text-center text-md-left">

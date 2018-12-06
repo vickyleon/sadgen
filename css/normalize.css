@@ -1,0 +1,1389 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  box-sizing: content-box; /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+    /* Tablas de promocion UNEFON */
+    /* colors */
+/* .all-deals p,.pfs-10-20{font-family:'../fonts/gloriola/gloriolabold'}.pfs-10-20,.pfs-adeals{vertical-align:middle;line-height:40px;letter-spacing:1px}#tabla-oferta h3{font-size:30px;font-weight:600;text-align:center;width:100%;margin:20px 0}#tabla-oferta h3:after{content:none}.ten-twenty{background:#FFC600;color:#404042;padding:0}.ten-twenty p{color:#404042;text-align:center;font-weight:700}.all-deals p,.tab-oferta1 p{color:#FFC600;text-align:center}.pfs-10-20{font-size:38px;margin:0;padding:15px 0}.ten-twenty span{font-size:20px;font-weight:600}.tab-oferta1{background:#404042;margin:0;padding:20px 0;height:110px}.tab-text-izq-1{font-size:40px}.tab-text-izq-2{font-size:15px;font-weight:400}.all-deals span,.llamadas-p-1,.llamadas-p-2,.num-gratis p,.recarga-col-5 p,.roaming-tabla,.tab-radio-prip p,.tab-redes p,.wapp p{font-weight:600}.all-deals{background:#404042;padding:0}.pfs-adeals{font-size:38px;margin:0;padding:15px 0}.all-deals span{font-size:20px}.tab-adeals{background:#CAC1BA;margin:0;padding:20px 0;height:110px}.tab-adeals p{color:#404042}.adeals-title{font-size:30px}.adeals-subtitle{font-size:25px}.dash{border:3px dashed red}.pl-3,.recarga-col-1,.recarga-col-2,.recarga-col-4{border-left:4px solid #fff}.desk-hidden{display:none}.tab-llamadas,.tab-radio-prip,.tab-redes{text-align:center;padding:15px 0;margin-top:4px;border-left:4px solid #fff}.rprip,.tab-radio-prip,.tab-redes,.wapp{height:70px;margin-top:4px}.tab-llamadas p,.tab-radio-prip p{color:#2d2d2d}.tab-radio-prip p,.tab-redes p{font-size:35px;padding-top:5px}.num-gratis{background:#43B02A;height:100px;margin-top:4px}.num-gratis p{color:#2d2d2d;padding-top:20px;text-align:left;float:left}.cinco-gigante{font-size:55px;margin-right:12px;vertical-align:-moz-middle-with-baseline;padding-left:13px;padding-top:25px;padding-bottom:50px;float:left;line-height:0}.wapp{background:#FFC600}.wapp p{font-size:20px;color:#404042;padding:17px 0;text-align:center;line-height:24px}.wapp .ion-social-whatsapp{font-size:28px}.rprip{background:#FF970D;padding:0 5px}.dias-recarga p,.recarga-col-1 p,.recarga-col-2 p,.recarga-col-3 p,.recarga-col-4 p,.rprip p{color:#2d2d2d;font-weight:600;text-align:center;padding-top:6px}.recarga-col-5 p{color:#2d2d2d;text-align:left;padding-top:6px;padding-left:70px}.dias-recarga,.recarga-col-1{background:#B2A49C}.recarga-col-2,.recarga-col-3,.recarga-col-5{background:#D2CBC5}.recarga-col-4,.tab-llamadas{background:#00A9CE}.dias-recarga,.recarga-col-1,.recarga-col-2,.recarga-col-3,.recarga-col-4,.recarga-col-5{height:auto;margin-top:4px;padding-bottom:5px}.tab-llamadas{height:100px}.tab-llamadas p,.tab-radio-prip p,.tab-redes-invert p{font-family:'../fonts/gloriola/gloriolaregular'}.llamadas-p-2{font-size:40px}.tab-redes{background:#404042}.tab-redes p{color:#FEC62E}.tab-redes img{margin-top:-10px;margin-left:4px}.tab-radio-prip{background:#FF970D}.roaming-tabla{text-align:center;font-size:28px;margin:25px 0 35px;line-height:34px}@media (max-width:1200px){.llamadas-p-2,.pfs-10-20,.pfs-adeals{font-size:30px}.tab-adeals,.tab-oferta1{height:90px;padding:10px 0}.adeals-title{font-size:28px;margin:0 0 5px}.cinco-gigante{font-size:40px}.ng-texto,.rprip p,.wapp p{font-size:20px}.num-gratis p{padding-top:20px}.num-gratis,.tab-llamadas{height:90px}.tab-llamadas{padding:10px 0 0}.wapp p{padding:6px 0}.wapp img{height:29px}}.verde_nuevo{background:#43B02A;text-align:center}.verde_nuevo p{color:#fff;padding-top:10px}@media (max-width:991px){.hidden_mobile{display:none}.desk-hidden{display:block;margin-bottom:30px}.beneficios-paquetes li{margin-bottom:15px}.pfs-10-20,.pfs-adeals{font-size:50px}.pfs-adeals{font-family:'../fonts/gloriola/gloriolabold'}.all-deals p{font-family:'../fonts/gloriola/gloriolamedium'}.all-deals span,.ten-twenty span{font-size:25px}.tab-redes-invert{background:#FFC600}.dias-recarga{background:#00A9CE}.tab-llamadas{background:#43B02A}.dias-recarga,.num-gratis,.rprip,.tab-llamadas,.tab-radio-prip,.tab-redes-invert,.verde_nuevo,.wapp{height:auto!important;border:none;padding:10px;margin:0}.tab-redes-invert p{color:#404042}.dias-recarga p,.num-gratis p,.rprip p,.tab-llamadas p,.tab-radio-prip p,.tab-redes-invert p,.wapp p{font-size:20px;font-weight:400}.cinco-gigante{font-size:30px;margin-right:5px;vertical-align:middle;line-height:0}.pl-3{border-left:none}.num-gratis{float:left;width:100%;height:70px!important}.num-gratis p,.num-gratis span{height:auto;margin:0;padding:0}.recarga_m{margin-bottom:30px!important;padding-right:0!important}}.loyalty_mobile{display:none}.azul_pl-3,.gris_pl-3,.verde_pl-3{border-left:5px solid #fff;text-align:center;color:#2d2d2d;font-size:20px;font-family:'../fonts/gloriola/gloriolamedium',sans-serif;padding:8px 0}.lealtad_recarga,.mini_mes{background:#333;color:#ffc600;text-align:center;font-size:20px}.mini_mes{padding:8px 0}.azul_pl-3{background:#1ba9cc}.verde_pl-3{background:#49ad35}.gris_pl-3{background:grey; color:#14171A;}.bck_unefon_yellow{background:#ffc600}.bck_unefon_yellow span.big_number{font-family:'../fonts/gloriola/gloriolabold',sans-serif;font-size:30px}.bck_unefon_yellow span.mini_number{font-family:'../fonts/gloriola/gloriolabold',sans-serif;font-size:22px;margin-right:2px}.bck_light_gray{background:#E6E6E6}.bck_light_gray,.bck_unefon_yellow{border-left:5px solid #fff;text-align:center;font-size:20px;font-family:'../fonts/gloriola/gloriolamedium',sans-serif;padding:21px 0;margin:5px 0;height:70px}.lealtad_benefits,.lealtad_recarga span.big_number,.lealtad_recarga span.mini_number{font-family:'../fonts/gloriola/gloriolabold',sans-serif}.lealtad_benefits{padding:22px 0;font-size:23px;letter-spacing:1px}.lealtad_recarga{padding:38px 0;vertical-align:middle;border-top:5px solid #fff}.lealtad_recarga p{color:#ffc600}.lealtad_recarga span.big_number{font-size:30px}.lealtad_recarga span.mini_number{font-size:22px;margin-right:2px}@media all and (max-width:1200px){.azul_pl-3,.gris_pl-3,.verde_pl-3{border-left:3px solid #fff;font-size:18px}.bck_unefon_yellow span.big_number{font-family:'../fonts/gloriola/gloriolabold',sans-serif;font-size:27px}.bck_unefon_yellow span.mini_number{font-family:'../fonts/gloriola/gloriomedium',sans-serif;font-size:22px;margin-right:2px}.lealtad_recarga{border-top:3px solid #fff;padding:36px 0}.bck_light_gray,.bck_unefon_yellow{border-left:3px solid #fff;margin:3px 0}.lealtad_benefits{font-family:'../fonts/gloriola/gloriolabold',sans-serif;font-size:20px}}@media all and (max-width:990px){.loyalty_desktop{display:none}.loyalty_mobile{display:block}.loyalty_mobile p{color:#ffc600}.l_mob_recarga{padding:20px 0 4px}.l_mob_recarga p{font-size:25px}.loyalty_mobile span.big_number{font-family:'../fonts/gloriola/gloriolabold',sans-serif;font-size:30px}.loyalty_mobile span.mini_number{font-family:'../fonts/gloriola/gloriolabold',sans-serif;font-size:22px;margin-right:2px}.lealtad_benefits{font-family:'../fonts/gloriola/gloriolamedium',sans-serif;font-size:20px;line-height:28px}.azul_pl-3,.bck_unefon_yellow,.gris_pl-3,.verde_pl-3{border-left:0;margin:0}.bck_unefon_yellow{height:auto;padding:20px}.gris_pl-3{margin-bottom:20px}}
+
+.paquetes-title h1 {
+  font-size: 52px; }
+.paquetes-title p {
+  font-size: 14px; }
+
+.tabla-puc .titulo-tabla {
+  text-align: center; }
+@media (max-width: 1200px) {
+  .tabla-puc .titulo-tabla {
+    font-size: 25px; } }
+.tabla-puc .table-planes {
+  padding-right: 10px; }
+.tabla-puc .table-planes .plan {
+  background-color: #FFC600;
+  height: 60px; }
+.tabla-puc .table-planes .plan p {
+text-align: right;
+  margin-right: 20px;
+  font-family: "../fonts/gloriola/gloriolaregular"; }
+.tabla-puc .table-planes .plan sup {
+  font-size: 50%; }
+.tabla-puc .table-planes .renta {
+  background: #00A9CE;
+  margin: 0;
+  padding: 20px 0;
+  height: 60px; }
+.tabla-puc .table-planes .renta p {
+  color:#2d2d2d;
+  font-size: 30px;
+  text-align: right;
+  margin-right: 20px; }
+@media (max-width: 1200px) {
+  .tabla-puc .table-planes .renta p {
+    font-size: 25px; } }
+.tabla-puc .table-planes .renta p sup {
+  font-size: 50%; }
+.tabla-puc .table-planes .eventos {
+  background: #43b02a;
+  margin: 0;
+  padding: 20px 0;
+  height: 100px; }
+.tabla-puc .table-planes .eventos p {
+  color: #2d2d2d;
+  font-size: 30px;
+  text-align: right;
+  margin-right: 20px; }
+@media (max-width: 600px) {
+  .tabla-puc .table-planes .eventos p {
+    font-size: 25px; } }
+.tabla-puc .table-planes .eventos sup {
+  font-size: 50%; }
+.tabla-puc .table-planes .minutos {
+  background: #a42081;
+  height: 120px;
+  margin-top: 4px;
+  padding: 20px 0; }
+.tabla-puc .table-planes .minutos p {
+  color: #2d2d2d;
+  font-size: 35px;
+  text-align: right;
+  margin-right: 20px;
+  margin-left: 100px;
+  line-height: 1.2; }
+@media (max-width: 1200px) {
+  .tabla-puc .table-planes .minutos p {
+    font-size: 29px; } }
+.tabla-puc .table-planes .minutos sup {
+  font-size: 50%; }
+.tabla-puc .table-planes .redes {
+  background: #474141;
+  height: 70px;
+  margin-top: 4px;
+  padding: 20px 0; }
+.tabla-puc .table-planes .redes p {
+  color: #FFC600;
+  font-size: 30px;
+  text-align: right;
+  margin-right: 20px; }
+@media (max-width: 1200px) {
+  .tabla-puc .table-planes .redes p {
+    font-size: 25px; } }
+.tabla-puc .table-planes .redes sup {
+  font-size: 50%; }
+.tabla-puc .table-planes .radio {
+  background: #B2A49C;
+  height: 70px;
+  margin-top: 4px;
+  padding: 20px 0; }
+.tabla-puc .table-planes .radio p {
+  color: #2d2d2d;
+  font-size: 30px;
+  text-align: right;
+  margin-right: 20px; }
+@media (max-width: 1200px) {
+  .tabla-puc .table-planes .radio p {
+    font-size: 25px; } }
+.tabla-puc .table-planes .radio sup {
+  font-size: 50%; }
+.tabla-puc .recargas-table .detalles {
+  min-height: 120px; }
+.tabla-puc .recargas-table .detalles .tab-llamadas p {
+  font-size: 20px; }
+@media (max-width: 400px) {
+  .tabla-puc .recargas-table .detalles .tab-llamadas p {
+    font-size: 16px; } }
+.tabla-puc .recargas-table .detalles .two-blocks {
+  width: 100%;
+  letter-spacing: -0.35em; }
+.tabla-puc .recargas-table .detalles .two-blocks .numeros {
+  min-height: 80px;
+  background: #474141;
+  width: 50%;
+  display: inline-block;
+  letter-spacing: normal; }
+.tabla-puc .recargas-table .detalles .two-blocks .numeros p {
+  color: white;
+  text-align: center;
+  padding-top: 20px; }
+@media (max-width: 400px) {
+  .tabla-puc .recargas-table .detalles .two-blocks .numeros p {
+    font-size: 15px; } }
+.tabla-puc .recargas-table .detalles .two-blocks .comunidad {
+  min-height: 80px;
+  background: #a42081;
+  width: 50%;
+  display: inline-block;
+  letter-spacing: normal; }
+.tabla-puc .recargas-table .detalles .two-blocks .comunidad p {
+  color: white;
+  text-align: center;
+  padding-top: 20px; }
+@media (max-width: 400px) {
+  .tabla-puc .recargas-table .detalles .two-blocks .comunidad p {
+    font-size: 15px; } }
+.tabla-puc .recargas-table .detalles .center {
+  text-align: center; }
+.tabla-puc .recargas-table .detalles .plan {
+  background: #474141;
+  height: 60px; }
+.tabla-puc .recargas-table .detalles .plan p {
+  color: #FFC600;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 15px;
+  font-family: "../fonts/gloriola/gloriolabold"; }
+@media (max-width: 1200px) {
+  .tabla-puc .recargas-table .detalles .plan p {
+    font-size: 22px; } }
+@media (max-width: 991px) {
+  .tabla-puc .recargas-table .detalles .plan p {
+    font-size: 40px; } }
+.tabla-puc .recargas-table .detalles .plan p span {
+  display: none; }
+@media (max-width: 991px) {
+  .tabla-puc .recargas-table .detalles .plan p span {
+    display: inline-block; } }
+.tabla-puc .recargas-table .detalles .costo {
+  background: #B2A49C;
+  height: 60px; }
+.tabla-puc .recargas-table .detalles .costo p {
+  color: #2d2d2d;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 15px; }
+@media (max-width: 1200px) {
+  .tabla-puc .recargas-table .detalles .costo p {
+    font-size: 18px; } }
+@media (max-width: 991px) {
+  .tabla-puc .recargas-table .detalles .costo p {
+    font-size: 40px; } }
+@media (max-width: 400px) {
+  .tabla-puc .recargas-table .detalles .costo p {
+    font-size: 18px; } }
+.tabla-puc .recargas-table .detalles .costo p span {
+  display: none; }
+@media (max-width: 991px) {
+  .tabla-puc .recargas-table .detalles .costo p span {
+    display: inline-block; } }
+.tabla-puc .recargas-table .detalles .eventos {
+  background: #cdc4c0;
+  height: 100px; }
+.tabla-puc .recargas-table .detalles .eventos p {
+  color: #474141;
+  text-align: center;
+  font-size: 20px;
+  margin: 0 0 0px; }
+.tabla-puc .recargas-table .detalles .eventos p.space {
+  padding-top: 20px; }
+.tabla-puc .recargas-table .detalles .eventos p.sub {
+  font-size: 8px; }
+.tabla-puc .recargas-table .detalles .eventos p.sub-g {
+  font-size: 11px; }
+.tabla-puc .recargas-table .detalles .eventos p.sub-g sup {
+  font-size: 8px; }
+@media (max-width: 991px) {
+  .tabla-puc .recargas-table .detalles .eventos p {
+    font-size: 40px; }
+  .tabla-puc .recargas-table .detalles .eventos p.space {
+    padding-top: 20px; }
+  .tabla-puc .recargas-table .detalles .eventos p.sub {
+    font-size: 22px; }
+  .tabla-puc .recargas-table .detalles .eventos p.sub-g {
+    font-size: 25px; }
+  .tabla-puc .recargas-table .detalles .eventos p.sub-g sup {
+    font-size: 15px; } }
+.tabla-puc .social-table .detalles {
+  height: 70px;
+  margin-top: 4px;
+  background: #474141; }
+.tabla-puc .social-table .detalles .contenido {
+  text-align: center;
+  padding: 20px; }
+.tabla-puc .social-table .detalles .contenido p {
+  display: inline-block;
+  color: #FFC600;
+  font-size: 23px; }
+.tabla-puc .social-table .detalles .contenido i {
+  color: #FFC600;
+  font-size: 20px; }
+.tabla-puc .radio-d .detalles {
+  height: 70px;
+  margin-top: 4px;
+  background: #B2A49C; }
+.tabla-puc .radio-d .detalles .contenido {
+  text-align: center;
+  padding: 20px; }
+.tabla-puc .radio-d .detalles .contenido p {
+  color: #2d2d2d;
+  font-size: 35px; }
+.tabla-puc .llamadas-table .detalles {
+  height: 120px;
+  margin-top: 4px; }
+.tabla-puc .llamadas-table .detalles .numeros {
+  position: relative;
+  background: #474141;
+  height: 60px; }
+.tabla-puc .llamadas-table .detalles .numeros p {
+  color: #FFC600;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 15px;
+  font-family: "../fonts/gloriola/gloriolabold"; }
+.tabla-puc .llamadas-table .detalles .numeros p.number {
+  font-size: 45px;
+  position: absolute;
+  left: 8px;
+  top: 5px; }
+.tabla-puc .llamadas-table .detalles .numeros p.description-number {
+  font-family: "../fonts/gloriola/gloriolaregular";
+  font-size: 12px;
+  line-height: 18px;
+  padding-left: 40px;
+  text-align: left; }
+@media (max-width: 1200px) {
+  .tabla-puc .llamadas-table .detalles .numeros p.description-number {
+    font-size: 9px; } }
+.tabla-puc .llamadas-table .detalles .comunidad {
+  background: #474141;
+  margin-top: 4px;
+  height: 56px; }
+.tabla-puc .llamadas-table .detalles .comunidad p {
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  line-height: 15px;
+  padding-top: 15px; }
+.tabla-puc .llamadas-table .llamadas-r {
+  position: absolute;
+  height: 120px;
+  margin-top: 3px;
+  margin-left: 4px; }
+.tabla-puc .llamadas-table .llamadas-r .descripcion {
+  background: #cdc4c0;
+  height: 120px; }
+.tabla-puc .llamadas-table .llamadas-r .descripcion p {
+  color: #474141;
+  text-align: center;
+  padding: 18px;
+  font-size: 25px;
+  margin-left: 85px;
+  margin-right: 85px;
+  line-height: 41px; }
+.tabla-puc .llamadas-table .llamadas-r .descripcion p sup {
+  font-size: 15px; }
+.tabla-puc .col-grid-13-1 {
+  position: relative;
+  width: 7.30%;
+  display: inline-block; }
+@media (max-width: 1200px) {
+  .tabla-puc .col-grid-13-1 {
+    width: 7.20%; } }
+@media (max-width: 991px) {
+  .tabla-puc .col-grid-13-1 {
+    width: 100%;
+    display: block; } }
+.tabla-puc .col-grid-13-2 {
+  position: relative;
+  width: 14.99%;
+  display: inline-block; }
+.tabla-puc .col-grid-13-10 {
+  position: relative;
+  width: 84%;
+  display: inline-block; }
+.tabla-puc .col-grid-13-13 {
+  position: relative;
+  width: 99.5%;
+  display: inline-block; }
+
+.all-deals p, .pfs-10-20 {
+  font-family: "../fonts/gloriola/gloriolabold"; }
+
+.pfs-10-20, .pfs-adeals {
+  vertical-align: middle;
+  line-height: 40px;
+  letter-spacing: 1px; }
+
+#tabla-oferta h3 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  margin: 20px 0; }
+
+#tabla-oferta h3:after {
+  content: none; }
+
+.ten-twenty {
+  background: #404042;
+  color: #404042;
+  padding: 0; }
+
+.ten-twenty p {
+  color: #ffc600;
+  text-align: center;
+  font-weight: 700; }
+
+.all-deals p {
+  color: #FFC600;
+  text-align: center; }
+
+.tab-oferta1 p {
+  color: #404042;
+  text-align: center;
+  font-family: "../fonts/gloriola/gloriolabold";
+}
+.pfs-10-20 {
+  font-size: 38px;
+  margin: 0;
+  padding: 15px 0; }
+
+.ten-twenty span {
+  font-size: 20px;
+  font-weight: 600; }
+
+.tab-oferta1 {
+  background: #CAC1BA;
+  margin: 0;
+  padding: 20px 0;
+  height: 110px; }
+
+.tab-text-izq-1 {
+  font-size: 40px; }
+
+.tab-text-izq-2 {
+  font-size: 15px;
+  font-weight: 400; }
+
+.all-deals span, .llamadas-p-1, .llamadas-p-2, .num-gratis p, .recarga-col-5 p, .roaming-tabla, .tab-radio-prip p, .tab-redes p, .wapp p {
+  font-weight: 600; }
+
+.all-deals {
+  background: #404042;
+  padding: 0; }
+
+.pfs-adeals {
+  font-size: 38px;
+  margin: 0;
+  padding: 15px 0; }
+
+.all-deals span {
+  font-size: 20px; }
+
+.tab-adeals {
+  background: #CAC1BA;
+  margin: 0;
+  padding: 20px 0;
+  height: 110px; }
+
+.tab-adeals p {
+  color: #404042; }
+
+.adeals-title {
+  font-size: 30px; }
+
+.adeals-subtitle {
+  font-size: 25px; }
+
+.dash {
+  border: 3px dashed red; }
+
+.pl-3, .recarga-col-1, .recarga-col-2, .recarga-col-4 {
+  border-left: 4px solid #fff; }
+
+.desk-hidden {
+  display: none; }
+
+.tab-llamadas, .tab-radio-prip, .tab-redes {
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 4px;
+  border-left: 4px solid #fff; }
+
+.rprip, .tab-radio-prip {
+  height: 70px;
+  margin-top: 4px; }
+
+.tab-llamadas p, .tab-radio-prip p {
+  color: #fff; }
+
+.tab-radio-prip p, .tab-redes p {
+  font-size: 35px;
+  padding-top: 5px; }
+
+.num-gratis {
+  background: #00A9CE;
+  height: 100px;
+  margin-top: 4px; }
+
+.num-gratis p {
+  color: #fff;
+  padding-top: 20px;
+  text-align: left;
+  float: left; }
+
+.cinco-gigante {
+  font-size: 55px;
+  margin-right: 12px;
+  vertical-align: -moz-middle-with-baseline;
+  padding-left: 20px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  float: left;
+  line-height: 0;
+  font-family: "../fonts/gloriola/gloriolabold";
+}
+
+.wapp, .tab-redes {
+  background: #404042;
+  height: 125px;
+}
+
+.wapp p {
+  font-size: 20px;
+  color: #ffc600;
+  padding: 17px 0px 10px;
+  text-align: center;
+  line-height: 24px; }
+
+.wapp .wapp_benefits,
+.tab-redes .tab-benefits {
+  color: #FFC600;
+  text-align: center;
+  border-top: 4px solid #fff;
+  font-weight: 800;
+  font-size: 15px;
+}
+.tab-benefits_2 {
+  color: #FFC600;
+  text-align: center;
+  border-top: 4px solid #404042;
+  font-weight: 800;
+  font-size: 15px;
+}
+.bl-white{border-left: 4px solid #fff}
+
+.wapp .ion-social-whatsapp {
+  font-size: 28px; }
+
+.rprip {
+  background: #FF970D;
+  padding: 0 5px; }
+
+.dias-recarga p, .recarga-col-1 p, .recarga-col-2 p, .recarga-col-3 p, .recarga-col-4 p, .rprip p {
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 6px; }
+
+.recarga-col-5 p {
+  color: #fff;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 70px; }
+
+.dias-recarga, .recarga-col-1 {
+  background: #B2A49C; }
+
+.recarga-col-2, .recarga-col-3, .recarga-col-5 {
+  background: #D2CBC5; }
+
+.recarga-col-4, .tab-llamadas {
+  background: #00A9CE; }
+
+.dias-recarga, .recarga-col-1, .recarga-col-2, .recarga-col-3, .recarga-col-4, .recarga-col-5 {
+  height: auto;
+  margin-top: 4px;
+  padding-bottom: 5px; }
+
+.tab-llamadas {
+  height: 100px; }
+
+.tab-llamadas p, .tab-radio-prip p, .tab-redes-invert p {
+  font-family: "../fonts/gloriola/gloriolaregular"; }
+
+.llamadas-p-2 {
+  font-size: 40px; }
+
+.tab-redes {
+  background: #404042; }
+
+.tab-redes p {
+  color: #FEC62E; }
+
+.tab-redes img {
+  margin-top: -10px;
+  margin-left: 4px; }
+
+.tab-radio-prip {
+  background: #FF970D;
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.roaming-tabla {
+  text-align: center;
+  font-size: 28px;
+  margin: 25px 0 35px;
+  line-height: 34px; }
+
+@media (max-width: 1200px) {
+  .llamadas-p-2, .pfs-10-20, .pfs-adeals {
+    font-size: 30px; }
+
+  .tab-adeals, .tab-oferta1 {
+    height: 90px;
+    padding: 10px 0; }
+
+  .adeals-title {
+    font-size: 28px;
+    margin: 0 0 5px; }
+
+  .cinco-gigante {
+    font-size: 40px; }
+
+  .ng-texto, .rprip p, .wapp p {
+    font-size: 20px; }
+
+  .num-gratis p {
+    padding-top: 20px; }
+
+  .num-gratis, .tab-llamadas {
+    height: 90px; }
+
+  .tab-llamadas {
+    padding: 10px 0 0; }
+
+  .wapp p {
+    padding: 6px 0; }
+
+  .wapp img {
+    height: 29px; } }
+.verde_nuevo {
+  background: #43B02A;
+  text-align: center; }
+
+.verde_nuevo p {
+  color: #fff;
+  padding-top: 10px; }
+
+@media (max-width: 991px) {
+  .hidden_mobile {
+    display: none; }
+
+  .desk-hidden {
+    display: block;
+    margin-bottom: 30px; }
+
+  .beneficios-paquetes li {
+    margin-bottom: 15px; }
+
+  .pfs-10-20, .pfs-adeals {
+    font-size: 50px; }
+
+  .pfs-adeals {
+    font-family: "../fonts/gloriola/gloriolabold"; }
+
+  .all-deals p {
+    font-family: "../fonts/gloriola/gloriolamedium"; }
+
+  .all-deals span, .ten-twenty span {
+    font-size: 25px; }
+
+  .tab-redes-invert {
+    background: #FFC600; }
+
+  .dias-recarga {
+    background: #00A9CE; }
+
+  .tab-llamadas {
+    background: #43B02A; }
+
+  .dias-recarga, .num-gratis, .rprip, .tab-llamadas, .tab-radio-prip, .tab-redes-invert, .verde_nuevo, .wapp {
+    height: auto !important;
+    border: none;
+    padding: 10px;
+    margin: 0; }
+
+  .tab-redes-invert p {
+    color: #404042; }
+
+  .dias-recarga p, .num-gratis p, .rprip p, .tab-llamadas p, .tab-radio-prip p, .tab-redes-invert p, .wapp p {
+    font-size: 20px;
+    font-weight: 400; }
+
+  .cinco-gigante {
+    font-size: 30px;
+    margin-right: 5px;
+    vertical-align: middle;
+    line-height: 0; }
+
+  .pl-3 {
+    border-left: none; }
+
+  .num-gratis {
+    float: left;
+    width: 100%;
+    height: 70px !important; }
+
+  .num-gratis p, .num-gratis span {
+    height: auto;
+    margin: 0;
+    padding: 0; }
+
+  .recarga_m {
+    margin-bottom: 30px !important;
+    padding-right: 0 !important; } }
+.loyalty_mobile {
+  display: none; }
+
+.azul_pl-3, .gris_pl-3, .verde_pl-3 {
+  border-left: 5px solid #fff;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-family: '../fonts/gloriola/gloriolamedium', sans-serif;
+  padding: 8px 0; }
+
+.lealtad_recarga, .mini_mes {
+  background: #333;
+  color: #ffc600;
+  text-align: center;
+  font-size: 20px; }
+
+.mini_mes {
+  padding: 8px 0; }
+
+.azul_pl-3 {
+  background: #1ba9cc; }
+
+.verde_pl-3 {
+  background: #49ad35; }
+
+.gris_pl-3 {
+  background: grey; }
+
+.bck_unefon_yellow {
+  background: #ffc600; }
+
+.bck_unefon_yellow span.big_number {
+  font-family: '../fonts/gloriola/gloriolabold', sans-serif;
+  font-size: 30px; }
+
+.bck_unefon_yellow span.mini_number {
+  font-family: '../fonts/gloriola/gloriolabold', sans-serif;
+  font-size: 22px;
+  margin-right: 2px; }
+
+.bck_light_gray {
+  background: #E6E6E6; }
+
+.bck_light_gray, .bck_unefon_yellow {
+  border-left: 5px solid #fff;
+  text-align: center;
+  font-size: 20px;
+  font-family: '../fonts/gloriola/gloriolamedium', sans-serif;
+  padding: 21px 0;
+  margin: 5px 0;
+  height: 70px; }
+
+.lealtad_benefits, .lealtad_recarga span.big_number, .lealtad_recarga span.mini_number {
+  font-family: "../fonts/gloriola/gloriolabold", sans-serif; }
+
+.lealtad_benefits {
+  padding: 22px 0;
+  font-size: 23px;
+  letter-spacing: 1px; }
+
+.lealtad_recarga {
+  padding: 38px 0;
+  vertical-align: middle;
+  border-top: 5px solid #fff; }
+
+.lealtad_recarga p {
+  color: #ffc600; }
+
+.lealtad_recarga span.big_number {
+  font-size: 30px; }
+
+.lealtad_recarga span.mini_number {
+  font-size: 22px;
+  margin-right: 2px; }
+
+@media all and (max-width: 1200px) {
+  .azul_pl-3, .gris_pl-3, .verde_pl-3 {
+    border-left: 3px solid #fff;
+    font-size: 18px; }
+
+  .bck_unefon_yellow span.big_number {
+    font-family: '../fonts/gloriola/gloriolabold', sans-serif;
+    font-size: 27px; }
+
+  .bck_unefon_yellow span.mini_number {
+    font-family: '../fonts/gloriola/gloriomedium', sans-serif;
+    font-size: 22px;
+    margin-right: 2px; }
+
+  .lealtad_recarga {
+    border-top: 3px solid #fff;
+    padding: 36px 0; }
+
+  .bck_light_gray, .bck_unefon_yellow {
+    border-left: 3px solid #fff;
+    margin: 3px 0; }
+
+  .lealtad_benefits {
+    font-family: '../fonts/gloriola/gloriolabold', sans-serif;
+    font-size: 20px; } }
+@media all and (max-width: 990px) {
+  .loyalty_desktop {
+    display: none; }
+
+  .loyalty_mobile {
+    display: block; }
+
+  .loyalty_mobile p {
+    color: #ffc600; }
+
+  .l_mob_recarga {
+    padding: 20px 0 4px; }
+
+  .l_mob_recarga p {
+    font-size: 25px; }
+
+  .loyalty_mobile span.big_number {
+    font-family: '../fonts/gloriola/gloriolabold', sans-serif;
+    font-size: 30px; }
+
+  .loyalty_mobile span.mini_number {
+    font-family: '../fonts/gloriola/gloriolabold', sans-serif;
+    font-size: 22px;
+    margin-right: 2px; }
+
+  .lealtad_benefits {
+    font-family: '../fonts/gloriola/gloriolamedium', sans-serif;
+    font-size: 20px;
+    line-height: 28px; }
+
+  .azul_pl-3, .bck_unefon_yellow, .gris_pl-3, .verde_pl-3 {
+    border-left: 0;
+    margin: 0; }
+
+  .bck_unefon_yellow {
+    height: auto;
+    padding: 20px; }
+
+  .gris_pl-3 {
+    margin-bottom: 20px; } }   */
+
+    /* Tablas de Promocion UNEFON Super Recargas
+
+     
+.btn_app {
+    color: #fff !important;
+    background: #43B02A;
+    margin: 0px 0px 30px 0px;
+    display: inline-block;
+    padding: 20px 150px;
+    }
+    .bg-img_sr {
+    background-size: cover!important;
+    background-position: center top;
+    background-repeat: no-repeat;
+    }
+    .bg-img_sr {
+    background-image: url(../img/full/UNF_Bn_super_recarga.jpg)
+    }
+    .redes_light {
+     height: 20px; 
+    }
+    #generico h2 span, .tickets h2 span{
+    font-size: 30px;
+    color: #00A9CE;
+    }
+    .tickets p {
+    background: #00A9CE; 
+    color: #fff; 
+    padding: 15px;  
+    font-size: 22px;
+    margin: 0px 0px 1px 0px;
+    }
+    .tickets .th {
+    background: #FFC600;   
+    font-size: 20px;
+    padding: 10px 15px;
+    }
+    .tickets .td1 {
+    background: #F2F2F2;   
+    font-size: 20px;
+    padding: 13px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-top: none;
+    }
+    .tickets .td2 {
+    background: #CCCCCC;   
+    font-size: 20px;
+    padding: 13px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-top: none;
+    }
+ .recarga_dark {
+    background: #404042;
+    color: #FFC600;
+    padding: 13px 0px;
+    font-size: 18px;
+    }
+    .mt_fff {border-top: 4px solid #fff;}
+    .mr_fff {border-right: 4px solid #fff;}
+    .mb_fff {border-bottom: 4px solid #fff;}
+    .ml_fff {border-left: 4px solid #fff;}
+    .m_fff {border: 4px solid #fff; border-left: none;
+    }
+    .recarga_gris, .recarga_amarillo, .recarga_azul, 
+    .recarga_naranja, .recarga_snd, .recarga_black {
+    font-size: 17px; padding: 10px; padding-right: 0px; padding-left: 0px;
+    }
+    .recarga_verde {font-size: 24px; padding: 25px 15px;
+    }
+    .recarga_gris {background: #CAC1BA;}
+    .recarga_amarillo {background: #FFC600;}
+    .recarga_verde {background: #43B02A;}
+    .recarga_azul {background: #00A9CE;}
+    .recarga_naranja {background: #FF970D;}
+    .recarga_black {background: #404042; min-height: 60px;}
+    .recarga_black p{padding: 5px 0px 0px;background: none;}
+    .recarga_snd {background: #B2A49C;
+    }
+    .ptb-40 {margin-top: 40px; margin-bottom: 40px;}
+    .pt-40 {margin-top: 40px;
+    }
+    .chip-tiendas {padding: 20px 20px 0px;
+    }
+    .cross-banner {
+    height: 230px;
+    padding-left: 17%;
+    }
+    .owl-carousel .owl-controls .owl-page span {
+    width: 10px;
+    height: 10px;
+    float: left;
+    }
+    .image-slider .owl-controls .owl-pagination {
+    margin-left: 48%;
+    }
+    .owl-carousel .owl-controls .owl-page.active span {border: 2px solid #FFF; background: #fff;
+    }
+    .full-wraper {
+    bottom: 26%;
+    right: 19%;
+    }
+    .pt-40{
+     padding-top: 40px;   
+    }
+    @media all and (max-width:450px) {
+.bg-img_sr {
+    background-size: auto 100% !important;
+    background-position: -350px 50px !important;
+}
+   .chip-tiendas {padding: 10px 20px;}
+   .cross-banner {padding-left: 0px;}
+
+   .btn_app {
+    padding: 20px 30px;
+}
+.pttop {padding-top: 0px !important;}
+
+}
+    
+        .btn-autoserv {
+            color: #2D2D2D !important;
+            background: #FFC600;
+            border: none;
+            font-size: 15px !important;
+            margin: 10px 0px;
+        }
+
+        .btn-autoserv i {
+            color: #333 !important;
+        }
+
+        .btn-autoserv:hover {
+            color: #fff !important;
+            background: #00A9CE;
+        }
+
+        .btn-autoserv:hover i {
+            color: #fff !important;
+        }
+
+        .btn-chat {
+            color: #333 !important;
+            background: #43B02A;
+            border: none;
+            font-size: 15px !important;
+            margin: 10px 0px;
+        }
+
+        .btn-chat i {
+            color: #333 !important;
+        }
+
+        .btn-chat:hover {
+            color: #fff !important;
+            background: #00A9CE;
+        }
+
+        .btn-chat:hover i {
+            color: #fff !important;
+        }
+
+        *:focus{
+            border: 2px solid #0099FF;
+        }
+
+ */

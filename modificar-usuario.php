@@ -1,4 +1,7 @@
-
+<?
+include ("header.php");
+include ("side-bar.php");
+?>
 <div class="main-body">
 	<div class="main-container">
 		<div class="col-md-12 mb-max">
@@ -39,22 +42,15 @@
 														<div class="col-md-4">
 															<label class="fs-b">Nombre</label>
 															<input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Nombre" formControlName="name"
-															 [(ngModel)]="user.name">
-															<p class="red-text mt-min" *ngIf="form['controls']?.name?.errors?.required && submitted">Este campo es
-																requerido</p>
-															<p class="red-text mt-min" *ngIf="form['controls']?.name?.errors?.pattern">No cumple con el formato</p>
-															<p class="red-text mt-min" *ngIf="form['controls']?.name?.errors?.nospace && submitted">No puede ser vacio</p>
+															 [(ngModel)]="user.name" required="required">
+															
 					
 														</div>
 														<div class="col-md-4">
 															<label class="fs-b">Primer Apellido</label>
 															<input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Primer Apellido"
-															 [(ngModel)]="user.lastName" formControlName="lastName">
-															<p class="red-text mt-min" *ngIf="form['controls']?.lastName?.errors?.required && submitted">Este campo es
-																requerido</p>
-															<p class="red-text mt-min" *ngIf="form['controls']?.lastName?.errors?.nospace && submitted">No puede ser
-																vacio</p>
-															<p class="red-text mt-min" *ngIf="form['controls']?.lastName?.errors?.pattern">No cumple con el formato</p>
+															 [(ngModel)]="user.lastName" formControlName="lastName" required="required">
+															
 														</div>
 														<div class="col-md-4">
 															<label class="fs-b">Segundo Apellido</label>
@@ -643,3 +639,6 @@
 			</div>
 		</div>
 	</div>
+<?
+include("footer.php");
+?>

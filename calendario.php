@@ -1,3 +1,7 @@
+<?
+include ("header.php");
+include ("side-bar.php");
+?>
 <div class="main-body">
 	<div class="main-container">
 		<div class="col-md-12 mb-max">
@@ -163,3 +167,7 @@
 		</div>
 	</div>
 </div>
+
+<?
+include("footer.php");
+?>

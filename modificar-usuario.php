@@ -54,13 +54,9 @@ include ("side-bar.php");
 														</div>
 														<div class="col-md-4">
 															<label class="fs-b">Segundo Apellido</label>
-															<input type="text" class="form-control" placeholder="Segundo Apellido" [(ngModel)]="user.secondLastName"
+															<input type="text" class="form-control" placeholder="Segundo Apellido" required="required" 
 															 formControlName="secondLastName">
-															<p class="red-text mt-min" *ngIf="form['controls']?.secondLastName?.errors?.required && submitted">Este campo
-																es requerido</p>
-															<p class="red-text mt-min" *ngIf="form['controls']?.secondLastName?.errors?.nospace && submitted">No puede
-																ser vacio</p>
-															<p class="red-text mt-min" *ngIf="form['controls']?.secondLastName?.errors?.pattern">No cumple con el formato</p>
+															
 														</div>
 													</div>
 												</div>
@@ -70,18 +66,13 @@ include ("side-bar.php");
 													<div class="row">
 														<div class="col-md-4">
 															<label class="fs-b">Correo</label>
-															<input type="email" class="form-control" placeholder="Correo" [(ngModel)]="user.email" formControlName="email">
-															<p class="red-text mt-min" *ngIf="form['controls']?.email?.errors?.required && submitted">Este campo es
-																requerido</p>
-															<p class="red-text mt-min" *ngIf="form['controls']?.email?.errors?.pattern">Debe ser un formato de email
-																valido</p>
+															<input type="email" class="form-control" placeholder="Correo" [(ngModel)]="user.email" formControlName="email" required="required">
+															 
 														</div>
 														<div class="col-md-4">
 															<label class="fs-b">Teléfono</label>
-															<input type="text" class="form-control" placeholder="Teléfono" [(ngModel)]="user.cellphone" formControlName="cellphone">
-															<p class="red-text mt-min" *ngIf="form['controls']?.cellphone?.errors?.required && submitted">Este campo
-																esrequerido</p>
-															<p class="red-text mt-min" *ngIf="form['controls']?.cellphone?.errors?.pattern">Deben ser 10 dígitos</p>
+															<input type="text" class="form-control" placeholder="Teléfono" [(ngModel)]="user.cellphone" formControlName="cellphone" required="required">
+															
 														</div>
 														<div class="col-md-4">
 															<label class="fs-b">Fecha Nacimiento</label>
@@ -90,14 +81,9 @@ include ("side-bar.php");
 																	<span class="input-group-text" id="basic-addon2"><i class="material-icons">&#xE24F;</i></span>
 																</div>
 																<input id="initialDate" type="text" class="form-control" placeholder="Fecha Nacimiento" [(ngModel)]="user.birthday"
-																 name="birthday" formControlName="birthday" autocomplete="off" data-date-format="yyyy-mm-dd">
+																 name="birthday" formControlName="birthday" autocomplete="off" data-date-format="yyyy-mm-dd" required="required">
 															</div>
-															<p class="red-text mt-min" *ngIf="form['controls']?.birthday?.errors?.required && submitted">Este campo es
-																requerido</p>
-															<p class="red-text mt-min" *ngIf="form['controls']?.birthday?.errors?.nospace && submitted">No pueden ser
-																solo espacios</p>
-															<p class="red-text mt-min" *ngIf="form['controls']?.birthday?.errors?.pattern">La fecha no cumple con el
-																formato</p>
+															
 														</div>
 													</div>
 												</div>
@@ -107,10 +93,8 @@ include ("side-bar.php");
 													<div class="row">
 														<div class="col-md-4">
 															<label class="fs-b">Boleta/cedula</label>
-															<input type="text" class="form-control" placeholder="Boleta/Cedula" [(ngModel)]="user.ticket" formControlName="ticket">
-															<p class="red-text mt-min" *ngIf="form['controls']?.ticket?.errors?.required && submitted">Este campo
-																es requerido</p>
-															<p class="red-text mt-min" *ngIf="form['controls']?.ticket?.errors?.pattern">Deben ser 10 dígitos</p>
+															<input type="text" class="form-control" placeholder="Boleta/Cedula" [(ngModel)]="user.ticket" formControlName="ticket" required="required">
+															
 														</div>
 													</div>
 												</div>
@@ -127,10 +111,9 @@ include ("side-bar.php");
 														<div class="col-md-4">
 															<label class="fs-b">Colonia</label>
 															<select class="form-control" formControlName="colony" [(ngModel)]="user.address.colony.id" placeholder="-- Seleccione --">
-																<option *ngFor="let item of colonies" value="{{ item.id }}">{{ item.name }}</option>
+																<option *ngFor="let item of colonies" value="{{ item.id }}"></option>
 															</select>
-															<p class="red-text mt-min" *ngIf="form['controls']?.colony?.errors?.required && submitted">Este campo es
-																requerido</p>
+															
 														</div>
 													</div>
 												</div>
@@ -141,44 +124,25 @@ include ("side-bar.php");
 															<div class="col-md-4">
 																<label class="fs-b">Calle</label>
 																<input type="text" class="form-control" placeholder="Calle" [(ngModel)]="user.address.street" formControlName="street">
-																<p class="red-text mt-min" *ngIf="form['controls']?.street?.errors?.required && submitted">Este campo es
-																	requerido</p>
-																<p class="red-text mt-min" *ngIf="form['controls']?.street?.errors?.nospace && submitted">No puede ser vacio</p>
-																<p class="red-text mt-min" *ngIf="form['controls']?.street?.errors?.pattern">No cumple con el formato</p>
+																
 															</div>
 															<div class="col-md-4">
 																<label class="fs-b">No. Exterior</label>
 																<input type="text" class="form-control" placeholder="Número Exterior" [(ngModel)]="user.address.outsideNumber"
 																 formControlName="outsideNumber">
-																<p class="red-text mt-min" *ngIf="form['controls']?.outsideNumber?.errors?.required && submitted">Este campo
-																	es
-																	requerido</p>
-																<p class="red-text mt-min" *ngIf="form['controls']?.outsideNumber?.errors?.nospace && submitted">No puede ser
-																	vacio</p>
-																<p class="red-text mt-min" *ngIf="form['controls']?.outsideNumber?.errors?.pattern">No cumple con el formato</p>
+																
 															</div>
 															<div class="col-md-4">
 																<label class="fs-b">No. Interior</label>
 																<input type="text" class="form-control" placeholder="Número Interior" [(ngModel)]="user.address.insideNumber"
 																 formControlName="insideNumber">
-																<p class="red-text mt-min" *ngIf="form['controls']?.insideNumber?.errors?.nospace && submitted">No puede ser
-																	vacio</p>
-																<p class="red-text mt-min" *ngIf="form['controls']?.insideNumber?.errors?.pattern">No cumple con el formato</p>
+																
 															</div>
 														</div>
 													</div>
 												</div>
 												<hr>
-												<div class="col-md-12 text-center form-group form-check">
-													<input class="form-check-input" type="checkbox" value="" id="defaultCheck1" formControlName="acceptTerms"
-													 [(ngModel)]="acceptedTerms">
-													<label class="form-check-label">He leído y acepto
-														<a href="#" style="color: black;" data-toggle="modal" data-target="#termsModal" data-backdrop="static"
-														 data-keyboard="false">Términos y condiciones</a>
-														<a href="#" style="color: black;" data-toggle="modal" data-target="#privacyModal" data-backdrop="static"
-														 data-keyboard="false">Aviso de privacidad</a>
-													</label>
-												</div>
+												
 											<div class="col-md-12">
 												<div class="row justify-content-end">
 													<div class="col-md-4">

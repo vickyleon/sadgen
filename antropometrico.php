@@ -1,3 +1,7 @@
+<?
+include ("header.php");
+include ("side-bar.php");
+?>
 <div class="main-body">
 	<div class="main-container">
 		<div class="col-md-12 mb-max">
@@ -109,51 +113,43 @@
 							<div class="row">
 								<div class="col-md-4 py">
 									<label>Glucosa</label>
-									<input type="text" class="form-control" placeholder="Glucosa" formControlName="glucose" [(ngModel)]="antropometric.glucose">
-									<p class="red-text mt-min" *ngIf="form['controls']?.glucose?.errors?.required && submitted">Este campo es requerido</p>
-									<p class="red-text mt-min" *ngIf="form['controls']?.glucose?.errors?.pattern">No cumple con el formato</p>
+									<input type="text" class="form-control" placeholder="Glucosa" formControlName="glucose" [(ngModel)]="antropometric.glucose" required="required">
+									
 								</div>
 								<div class="col-md-4 py">
 									<label>Colesterol</label>
-									<input type="text" class="form-control" placeholder="Colesterol" formControlName="cholesterol" [(ngModel)]="antropometric.cholesterol">
-									<p class="red-text mt-min" *ngIf="form['controls']?.cholesterol?.errors?.required && submitted">Este campo es requerido</p>
-									<p class="red-text mt-min" *ngIf="form['controls']?.cholesterol?.errors?.pattern">No cumple con el formato</p>
+									<input type="text" class="form-control" placeholder="Colesterol" formControlName="cholesterol" [(ngModel)]="antropometric.cholesterol" required="required">
+									 
 								</div>
 								<div class="col-md-4 py">
 									<label>Triglicéridos</label>
-									<input type="text" class="form-control" placeholder="Triglicéridos" formControlName="triglycerides" [(ngModel)]="antropometric.triglycerides">
-									<p class="red-text mt-min" *ngIf="form['controls']?.triglycerides?.errors?.required && submitted">Este campo es requerido</p>
-									<p class="red-text mt-min" *ngIf="form['controls']?.triglycerides?.errors?.pattern">No cumple con el formato</p>
+									<input type="text" class="form-control" placeholder="Triglicéridos" formControlName="triglycerides" [(ngModel)]="antropometric.triglycerides" required="required">
+									
 								</div>
 								<div class="col-md-4 py">
 									<label>Ácido úrico</label>
-									<input type="text" class="form-control" placeholder="Ácido úrico" formControlName="uricacid" [(ngModel)]="antropometric.uricacid">
-									<p class="red-text mt-min" *ngIf="form['controls']?.uricacid?.errors?.required && submitted">Este campo es requerido</p>
-									<p class="red-text mt-min" *ngIf="form['controls']?.uricacid?.errors?.pattern">No cumple con el formato</p>
+									<input type="text" class="form-control" placeholder="Ácido úrico" formControlName="uricacid" [(ngModel)]="antropometric.uricacid" required="required">
+									
 								</div>
 								<div class="col-md-4 py">
 									<label>Hemoglobina</label>
-									<input type="text" class="form-control" placeholder="Hemoglobina" formControlName="hemoglobin" [(ngModel)]="antropometric.hemoglobin">
-									<p class="red-text mt-min" *ngIf="form['controls']?.hemoglobin?.errors?.required && submitted">Este campo es requerido</p>
-									<p class="red-text mt-min" *ngIf="form['controls']?.hemoglobin?.errors?.pattern">No cumple con el formato</p>
+									<input type="text" class="form-control" placeholder="Hemoglobina" formControlName="hemoglobin" [(ngModel)]="antropometric.hemoglobin" required="required">
+									
 								</div>
 								<div class="col-md-4 py">
 									<label>Urea</label>
-									<input type="text" class="form-control" placeholder="Urea" formControlName="urea" [(ngModel)]="antropometric.urea">
-									<p class="red-text mt-min" *ngIf="form['controls']?.urea?.errors?.required && submitted">Este campo es requerido</p>
-									<p class="red-text mt-min" *ngIf="form['controls']?.urea?.errors?.pattern">No cumple con el formato</p>
+									<input type="text" class="form-control" placeholder="Urea" formControlName="urea" [(ngModel)]="antropometric.urea" required="required">
+									
 								</div>
 								<div class="col-md-4 py">
 									<label>Albúmina</label>
-									<input type="text" class="form-control" placeholder="Albúmina" formControlName="albumin" [(ngModel)]="antropometric.albumin">
-									<p class="red-text mt-min" *ngIf="form['controls']?.albumin?.errors?.required && submitted">Este campo es requerido</p>
-									<p class="red-text mt-min" *ngIf="form['controls']?.albumin?.errors?.pattern">No cumple con el formato</p>
+									<input type="text" class="form-control" placeholder="Albúmina" formControlName="albumin" [(ngModel)]="antropometric.albumin" required="required">
+									
 								</div>
 								<div class="col-md-4 py">
 									<label>Creatinina</label>
-									<input type="text" class="form-control" placeholder="Creatinina" formControlName="creatinine" [(ngModel)]="antropometric.creatinine">
-									<p class="red-text mt-min" *ngIf="form['controls']?.creatinine?.errors?.required && submitted">Este campo es requerido</p>
-									<p class="red-text mt-min" *ngIf="form['controls']?.creatinine?.errors?.pattern">No cumple con el formato</p>
+									<input type="text" class="form-control" placeholder="Creatinina" formControlName="creatinine" [(ngModel)]="antropometric.creatinine" required="required">
+									
 								</div>
 							</div>
 						</div>
@@ -169,25 +165,19 @@
 								<div class="col-md-4">
 									<label for="">Talla</label>
 									<input type="text" class="form-control" placeholder="Talla" formControlName="hight" [(ngModel)]="antropometric.hight"
-									 (change)="getIMC();">
-									<p class="red-text mt-min" *ngIf="form['controls']?.hight?.errors?.required && submitted">Este campo es
-										requerido</p>
-									<p class="red-text mt-min" *ngIf="form['controls']?.hight?.errors?.pattern">No cumple con el formato</p>
+									 (change)="getIMC();" required="required">
+									
 								</div>
 								<div class="col-md-4">
 									<label for="">Peso</label>
 									<input type="text" class="form-control" placeholder="Peso" formControlName="weight" [(ngModel)]="antropometric.weight"
-									 (change)="getIMC();">
-									<p class="red-text mt-min" *ngIf="form['controls']?.weight?.errors?.required && submitted">Este campo es
-										requerido</p>
-									<p class="red-text mt-min" *ngIf="form['controls']?.weight?.errors?.pattern">No cumple con el formato</p>
+									 (change)="getIMC();" required="required">
+									
 								</div>
 								<div class="col-md-4">
 									<label for="">% Grasa</label>
-									<input type="text" class="form-control" placeholder="% Grasa" formControlName="fat" [(ngModel)]="antropometric.fatLoss">
-									<p class="red-text mt-min" *ngIf="form['controls']?.fat?.errors?.required && submitted">Este campo es
-										requerido</p>
-									<p class="red-text mt-min" *ngIf="form['controls']?.fat?.errors?.pattern">No cumple con el formato</p>
+									<input type="text" class="form-control" placeholder="% Grasa" formControlName="fat" [(ngModel)]="antropometric.fatLoss" required="required">
+									
 								</div>
 							</div>
 						</div>
@@ -195,10 +185,8 @@
 							<div class="row">
 								<div class="col-md-4">
 									<label for="">% Agua</label>
-									<input type="text" class="form-control" placeholder="% Agua" formControlName="water" [(ngModel)]="antropometric.water">
-									<p class="red-text mt-min" *ngIf="form['controls']?.water?.errors?.required && submitted">Este campo es
-										requerido</p>
-									<p class="red-text mt-min" *ngIf="form['controls']?.water?.errors?.pattern">No cumple con el formato</p>
+									<input type="text" class="form-control" placeholder="% Agua" formControlName="water" [(ngModel)]="antropometric.water" required="required">
+									
 								</div>
 								<div class="col-md-4">
 									<label for="">Genero</label>
@@ -207,15 +195,12 @@
 										<option value="false">Masculino</option>
 										<option value="true">Femenino</option>
 									</select>
-									<p class="red-text mt-min" *ngIf="form['controls']?.sex?.errors?.required && submitted">Este campo es
-										requerido</p>
+									
 								</div>
 								<div class="col-md-4">
 									<label for="">C. Pantorilla</label>
 									<input type="text" class="form-control" placeholder="C. Pantorilla" formControlName="calf" [(ngModel)]="antropometric.calf">
-									<p class="red-text mt-min" *ngIf="form['controls']?.calf?.errors?.required && submitted">Este campo es
-										requerido</p>
-									<p class="red-text mt-min" *ngIf="form['controls']?.calf?.errors?.pattern">No cumple con el formato</p>
+									
 								</div>
 							</div>
 						</div>
@@ -224,16 +209,12 @@
 								<div class="col-md-4">
 									<label for="">C. Brazo</label>
 									<input type="text" class="form-control" placeholder="C. Brazo" formControlName="arm" [(ngModel)]="antropometric.arm">
-									<p class="red-text mt-min" *ngIf="form['controls']?.arm?.errors?.required && submitted">Este campo es
-										requerido</p>
-									<p class="red-text mt-min" *ngIf="form['controls']?.arm?.errors?.pattern">No cumple con el formato</p>
+									
 								</div>
 								<div class="col-md-4">
 									<label for="">C. Muñeca</label>
 									<input type="text" class="form-control" placeholder="C. Muñeca" formControlName="wrist" [(ngModel)]="antropometric.wrist">
-									<p class="red-text mt-min" *ngIf="form['controls']?.wrist?.errors?.required && submitted">Este campo es
-										requerido</p>
-									<p class="red-text mt-min" *ngIf="form['controls']?.wrist?.errors?.pattern">No cumple con el formato</p>
+									
 								</div>
 								<div class="col-md-4">
 									<label for="">P.C. Bicipital</label>
@@ -329,3 +310,6 @@
 		</form>
 	</div>
 </div>
+<?
+include("footer.php");
+?>

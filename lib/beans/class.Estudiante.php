@@ -5,54 +5,33 @@
  */
 class Estudiante {
 	
-	 var $Boleta;
-	 var $nom_Est;
-	 var $ap_Pat;
-	 var $ap_Mat;
-	 var $edad;
-	 var $telefono;
-	 var $fecha_Nac;
-	 var $email;
-	 var $Especialista_idEspecialista;
-	 var $Login_idLogin;
-	 var $Comprobanteins_idComprobante;
+	 var $boleta;
+	 var $id_usuario;
+	 var $id_especialista;
 
 	function Estudiante(){
 
 	}
-	function getBoleta(){
-		return $this->Boleta;
+	function getboleta(){
+		return $this->boleta;
 	}
-	function getNomEst(){
-		return $this->nom_Est;
+	function getIdUsuario(){
+		return $this->id_usuario;
 	}
-	function getApPat(){
-		return $this->ap_Pat;
+	function getIdEspecialista(){
+		return $this->id_especialista;;
 	}
-	function getApMat(){
-		return $this->ap_Mat;
+	
+	function setboleta($boleta){
+		$this->boleta = $boleta;
 	}
-	function getEdad(){
-		return $this->edad;
+	function setIdUsuario($id_usuario){
+		$this->id_usuario = $id_usuario;
 	}
-	function getTelefono(){
-		return $this->telefono;
+	function setIdEspecialista($id_especialista){
+		$this->id_especialista = $id_especialista;
 	}
-	function getFechaNac(){
-		return $this->fecha_Nac;
-	}
-	function getEmail(){
-		return $this->email;
-	}
-	function getEspecialistaIdEspecialista(){
-		return $this->Especialista_idEspecialista;
-	}
-	function getLoginIdLogin(){
-		return $this->Login_idLogin;
-	}
-	function getComprobanteIdComprobantes(){
-		return $this->Comprobanteins_idComprobante;
-	}
+
 
 	
 }

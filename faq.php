@@ -4,10 +4,8 @@ include ("side-bar.php");
 ?>
 <div class="main-body">
 	<div class="main-container">
-		<div class="col-md-12 mb-max">
 			<h3 class="text-center">FAQ</h3>
-		</div>
-		<div class="card">
+			<div class="card">
 			<div class="card-body">
 				<div class="col-md-12">
 					<div id="accordion">
@@ -188,7 +186,8 @@ include ("side-bar.php");
 			</div>
 		</div>
 	</div>
+	<?php
+	include("footer.php");
+	?>
 </div>
-<?php
-include("footer.php");
-?>
+

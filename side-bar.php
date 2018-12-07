@@ -13,31 +13,31 @@
 		</div>
 		<ul class="list-unstyled components">
 			<li [routerLinkActive]="['active']">
-				<a href="home.php" [routerLink]="['/home']" ><i class="material-icons mr-4">&#xe563;</i>Inicio</a>
+				<a href="home.php"  ><i class="material-icons mr-4">&#xe563;</i>Inicio</a>
 			</li>
 			<li [routerLinkActive]="['active']" *ngIf="_auth.getUser().rol.id == 2">
-				<a href="#" [routerLink]="['/upload']" ><i class="material-icons mr-4">&#xe174;</i>Registrar Estudiante</a>
+				<a href="ConfirmarUsuario"  ><i class="material-icons mr-4">&#xe174;</i>Registrar Estudiante</a>
 			</li>
 			<li [routerLinkActive]="['active']">
-				<a href="antropometrico.php" [routerLink]="['/antropometrico']"><i class="material-icons mr-4">&#xe84e;</i>Historial C.N.</a>
+				<a href="antropometrico.php" ><i class="material-icons mr-4">&#xe84e;</i>Historial C.N.</a>
 			</li>
 			<li [routerLinkActive]="['active']">
-				<a href="calendario.php" [routerLink]="['/calendar']"><i class="material-icons mr-4">&#xe916;</i>Calendario</a>
+				<a href="calendario.php" ><i class="material-icons mr-4">&#xe916;</i>Calendario</a>
 			</li>
 			<li [routerLinkActive]="['active']">
-				<a href="faq.php" [routerLink]="['/faq']"><i class="material-icons mr-4">&#xe8af;</i>FAQ</a>
+				<a href="faq.php" ><i class="material-icons mr-4">&#xe8af;</i>FAQ</a>
 			</li>
 			<li [routerLinkActive]="['active']">
-				<a href="foro.php" [routerLink]="['/foro']"><i class="material-icons mr-4">&#xe8af;</i>Foro</a>
+				<a href="foro.php" ><i class="material-icons mr-4">&#xe8af;</i>Foro</a>
 			</li>
 			<li [routerLinkActive]="['active']">
-				<a href="modificar-usuario" [routerLink]="['/modificar-usuario']"><i class="material-icons mr-4">&#xe174;</i>Modificar usuarios</a>
+				<a href="modificar-usuario" ><i class="material-icons mr-4">&#xe174;</i>Modificar usuarios</a>
 			</li>
 			<li [routerLinkActive]="['active']">
-				<a href="menu.php" [routerLink]="['/foodplan']"><i class="material-icons mr-4">&#xe85e;</i>Plan Alimenticio</a>
+				<a href="menu.php" ><i class="material-icons mr-4">&#xe85e;</i>Plan Alimenticio</a>
 			</li>
 			<li [routerLinkActive]="['active']">
-				<a href="reportes.php" [routerLink]="['/report']"><i class="material-icons mr-4">&#xe8e5;</i>Reportes</a>
+				<a href="reportes.php" ><i class="material-icons mr-4">&#xe8e5;</i>Reportes</a>
 			</li>
 		</ul>
 	</nav>

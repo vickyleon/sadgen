@@ -18,7 +18,7 @@ include ("side-bar.php");
 					<div class="carousel-inner text-center">
 						<div class="carousel-item active">
 							<h4>Antropométrico</h4>
-							<img class="d-block w-100 corusel-image" src="img/antropometrico.jpeg" alt="Antropometrico">
+							<img class="d-block w-100 corusel-image" src="img/antropometrico.jpeg" href="antropometrico.php" alt="Historial C.N."  >
 						</div>
 						<div class="carousel-item">
 							<h4>Calendario</h4>
